@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:login/color/color.dart';
+import 'package:login/profile/edit_password.dart';
 
 import 'editProfile.dart';
 
@@ -57,7 +58,7 @@ class _ProfileState extends State<Profile> {
           child:  Column(
              children: [
                Container(
-                 height: MediaQuery.of(context).size.height*0.30,
+                 height: MediaQuery.of(context).size.height*0.35,
 
                  padding: EdgeInsets.all(10),
                  decoration: BoxDecoration(
@@ -70,14 +71,19 @@ class _ProfileState extends State<Profile> {
                      InkWell(
                        onTap: (){
                          Navigator.push(context, MaterialPageRoute(
-                             builder:  (context) => EditProfile(),
+                             builder:  (context) => EditProfile(
+                               userId: widget.userId,
+                               phone: phone,
+                                profilePic: profilePic,
+                               address: address,
+                             ),
                          ));
                        },
                        child: CircleAvatar(
-                         radius: 30,
-                         backgroundImage: AssetImage(
+                         radius:40,
+                         backgroundImage: profilePic==null ?  AssetImage(
                            'assets/images/add_image.png'
-                         ),
+                         ):NetworkImage(profilePic),
                        ),
                      ),
 
@@ -114,7 +120,10 @@ class _ProfileState extends State<Profile> {
                        onPressed: (){
                          Navigator.push(context, MaterialPageRoute(
                            builder:  (context) => EditProfile(
-
+                              userId: widget.userId,
+                              address: address,
+                              profilePic: profilePic,
+                              phone: phone,
                            ),
                          ));
                        },
@@ -256,6 +265,29 @@ class _ProfileState extends State<Profile> {
                    ],
                  ),
                ),
+
+               SizedBox(height: 30,),
+
+
+               InkWell(
+                 onTap: (){
+                   Navigator.push(context, MaterialPageRoute(
+                     builder: (context) => EditPassword(userId : widget.userId),
+                   ));
+                 },
+                 child: Container(
+                   alignment: Alignment.center,
+                   padding: EdgeInsets.all(10),
+                   width: MediaQuery.of(context).size.width,
+                   color: Colors.red,
+                   child : Text(
+                       'Change Password',
+                       style: TextStyle(
+                         color: Colors.white,
+                       ),
+                   ),
+                 ),
+               )
 
 
              ],

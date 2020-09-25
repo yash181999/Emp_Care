@@ -50,6 +50,7 @@ class _NavDrawerState extends State<NavDrawer> {
            userData.add(value.data['idProof']);
            userData.add(value.data['phone']);
            userData.add(value.data['address']);
+           userData.add(value.data['profilePic']);
            AuthService.saveUserNameSharedPref(value.data['name']);
 
          }
@@ -98,6 +99,7 @@ class _NavDrawerState extends State<NavDrawer> {
                         children: [
                           CircleAvatar(
                             radius: 40,
+                            backgroundImage:  AssetImage('assets/images/dummy_profile.jpg') ,
                             backgroundColor: Colors.green,
                             // backgroundImage: AssetImage('images/batman.jpg'),
                           ),

@@ -23,13 +23,14 @@ class EditProfile extends StatefulWidget {
 class _EditProfileState extends State<EditProfile> {
 
   final _formKey = GlobalKey<FormState>();
-  TextEditingController nameController = TextEditingController();
-  TextEditingController bioController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
+  TextEditingController phoneNumber = TextEditingController();
 
   initState(){
     super.initState();
     setState(() {
-      nameController.text  = widget.name;
+      addressController.text  = widget.address;
+      phoneNumber.text = widget.phone;
     });
   }
 
@@ -45,7 +46,7 @@ class _EditProfileState extends State<EditProfile> {
         color: Colors.blue,
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(58.0),
+          borderRadius: BorderRadius.circular(10),
         ),
         onPressed: () async{
 
@@ -65,21 +66,14 @@ class _EditProfileState extends State<EditProfile> {
               (await uploadThumbnailImage.onComplete);
               final String imageUrl = await imageDownloadUrl.ref.getDownloadURL();
 
-              Firestore.instance.collection("Users").document(widget.userId).updateData({
-                "profilePic" : imageUrl,
+             await  Firestore.instance.collection("Users").document(widget.userId).updateData({
+                 "profilePic" : imageUrl,
+                 "address" : addressController.text,
+                 "phone" : phoneNumber.text,
               });
-
-
 
             }
 
-
-            Firestore.instance.collection("Users").document(widget.userId).updateData({
-              "name" : nameController,
-              "bio" : bioController,
-            });
-
-            AuthService.saveUserNameSharedPref(nameController.text);
 
             Navigator.pop(context);
 
@@ -128,6 +122,40 @@ class _EditProfileState extends State<EditProfile> {
 
 
               SizedBox(height: 20,),
+
+              TextFormField(
+                validator: (value){
+                  if(value.isEmpty) {
+                    return "Field should not be empty";
+                  }
+                  return null;
+                },
+                controller: addressController,
+                decoration: InputDecoration(
+                  labelText: "Edit Address",
+                ),
+              ),
+
+              TextFormField(
+                keyboardType: TextInputType.number,
+                validator: (value){
+                  if(value.isEmpty) {
+                    return "Field should not be empty";
+                  }
+                  if(value.length<10 || value.length>10) {
+                    return "Invalid Phone Number";
+                  }
+                  return null;
+                },
+                controller: phoneNumber,
+                decoration: InputDecoration(
+                  labelText: "Edit Phone Number",
+
+
+                ),
+              ),
+
+
 
 
 
