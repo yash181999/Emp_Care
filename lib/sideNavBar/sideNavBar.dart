@@ -131,34 +131,9 @@ class _NavDrawerState extends State<NavDrawer> {
               ),
             ),
           ),
-          ListTile(
-            leading: Icon(Icons.question_answer , color: Colors.black,),
-            title: Text(
-              'ChatBot',
-              style: TextStyle(
-                  fontFamily: "sf_pro_medium",
-                  color: Colors.black
-              ),
-            ),
-            onTap: () => {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => ChatBot()))
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.verified_user , color: Colors.black,),
-            title: Text('Task',style: TextStyle(fontFamily: "sf_pro_medium", color: Colors.black),),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Task()))},
-          ),
-          ListTile(
-            leading: Icon(Icons.videocam , color: Colors.black,),
-            title: Text('Conference' , style: TextStyle(fontFamily: "sf_pro_medium", color: Colors.black),),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Conference()))},
-          ),
-          ListTile(
-            leading: Icon(Icons.message , color: Colors.black,),
-            title: Text('Conference' , style: TextStyle(fontFamily: "sf_pro_medium", color: Colors.black),),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Request()))},
-          ),
+
+
+
           ListTile(
             leading: Icon(Icons.border_color , color: Colors.black,),
             title: Text('Feedback', style: TextStyle(fontFamily: "sf_pro_medium", color: Colors.black),),

@@ -31,11 +31,13 @@ class _ListItemsState extends State<ListItems> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                widget.title,
-                style: TextStyle(
-                  color: widget.titleColor,
-                  fontSize: widget.fontSize,
+              Flexible(
+                child: SelectableText(
+                  widget.title,
+                  style: TextStyle(
+                    color: widget.titleColor,
+                    fontSize: widget.fontSize,
+                  ),
                 ),
               ),
               Icon(

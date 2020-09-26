@@ -1,11 +1,13 @@
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:login/discussion/discussion.dart';
 import 'package:login/home/home.dart';
 import 'package:login/screens/chatbot.dart';
 import 'package:login/screens/conference.dart';
 import 'package:login/screens/request.dart';
 import 'package:login/screens/task.dart';
+import 'package:login/video_calling_agora/pages/index.dart';
 
 
 
@@ -27,8 +29,8 @@ class _MainScreenState extends State<MainScreen> {
     Home(),
     ChatBot(),
     Request(),
-    Conference(),
-    Task(),
+    IndexPage(),
+    Discussion(),
 
   ];
 
@@ -106,8 +108,8 @@ class _MainScreenState extends State<MainScreen> {
 
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.portrait),
-              label:"Task",
+              icon: Icon(Icons.people),
+              label:"Discussion",
             ),
 
 

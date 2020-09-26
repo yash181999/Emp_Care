@@ -7,6 +7,7 @@ import 'package:login/database/AuthService.dart';
 import 'package:login/database/firestore.dart';
 import 'package:login/screens/announcements.dart';
 import 'package:login/sideNavBar/sideNavBar.dart';
+import 'package:login/widgets/listItems.dart';
 import 'package:login/widgets/top_card.dart';
 
 class Home extends StatefulWidget {
@@ -21,8 +22,9 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     // TODO: implement initState
-    super.initState();
     getUserData();
+    super.initState();
+
   }
 
   dynamic userData;
@@ -94,15 +96,9 @@ class _HomeState extends State<Home> {
                       ),
                     ),
 
-
-
                   ],
                 ),
               ),
-
-
-
-
 
 
               SizedBox(height: 20,),
@@ -113,7 +109,7 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Recent Assigned",
+                      "Recent",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 15
@@ -129,53 +125,112 @@ class _HomeState extends State<Home> {
 
               SizedBox(height: 30,),
 
+
+
+              StreamBuilder(
+
+                stream : Firestore.instance.collection("Meeting").where("status", isEqualTo: "online").snapshots(),
+
+                builder: (context, snapshot) {
+                  return snapshot.hasData ? Column(
+                    children: List.generate(snapshot.data.documents.length, (index) {
+                       DocumentSnapshot doc = snapshot.data.documents[index];
+                         return Column(
+                            children: [
+                              ListItems(
+                                color: Colors.blue,
+                                title: "Meeting Id  copy it and paste it in conference :  ${doc['meetingId'].toString()} ",
+                                titleColor: white,
+                              ),
+                              SizedBox(height: 10,),
+                            ],
+                         );
+                      }),
+
+                  ) : Container();
+                }
+              ),
+
+              SizedBox(height : 20),
+
+
+              StreamBuilder(
+
+                  stream : Firestore.instance.collection("Tasks").where("userId",isEqualTo:userId).snapshots(),
+
+                  builder: (context, snapshot) {
+                    return snapshot.hasData ? Column(
+                      children: List.generate(snapshot.data.documents.length, (index) {
+                        DocumentSnapshot doc = snapshot.data.documents[index];
+                        return Column(
+                          children: [
+                            ListItems(
+                              color: Colors.blue,
+                              title: doc['Task'],
+                              titleColor: white,
+                            ),
+                            SizedBox(height: 10,),
+                          ],
+                        );
+                      }),
+
+                    ) : Container();
+                  }
+              ),
+
+
+
+
+
+
+
               // task assigned
-
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  color: Colors.greenAccent,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                height: 70,
-                width: MediaQuery.of(context).size.width,
-              ),
-
-              SizedBox(height: 20,),
-
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  color: Colors.purpleAccent,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                height: 70,
-                width: MediaQuery.of(context).size.width,
-              ),
-
-              SizedBox(height: 20,),
-
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                height: 70,
-                width: MediaQuery.of(context).size.width,
-              ),
-
-              SizedBox(height: 20,),
-
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  color: Colors.deepOrangeAccent,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                height: 70,
-                width: MediaQuery.of(context).size.width,
-              ),
+//
+//              Container(
+//                margin: EdgeInsets.symmetric(horizontal: 20),
+//                decoration: BoxDecoration(
+//                  color: Colors.greenAccent,
+//                  borderRadius: BorderRadius.circular(20),
+//                ),
+//                height: 70,
+//                width: MediaQuery.of(context).size.width,
+//              ),
+//
+//              SizedBox(height: 20,),
+//
+//              Container(
+//                margin: EdgeInsets.symmetric(horizontal: 20),
+//                decoration: BoxDecoration(
+//                  color: Colors.purpleAccent,
+//                  borderRadius: BorderRadius.circular(20),
+//                ),
+//                height: 70,
+//                width: MediaQuery.of(context).size.width,
+//              ),
+//
+//              SizedBox(height: 20,),
+//
+//              Container(
+//                margin: EdgeInsets.symmetric(horizontal: 20),
+//                decoration: BoxDecoration(
+//                  color: Colors.grey,
+//                  borderRadius: BorderRadius.circular(20),
+//                ),
+//                height: 70,
+//                width: MediaQuery.of(context).size.width,
+//              ),
+//
+//              SizedBox(height: 20,),
+//
+//              Container(
+//                margin: EdgeInsets.symmetric(horizontal: 20),
+//                decoration: BoxDecoration(
+//                  color: Colors.deepOrangeAccent,
+//                  borderRadius: BorderRadius.circular(20),
+//                ),
+//                height: 70,
+//                width: MediaQuery.of(context).size.width,
+//              ),
             ],
           ),
         ),

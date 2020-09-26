@@ -8,6 +8,8 @@ import 'package:login/screens/conference.dart';
 import 'package:login/screens/request.dart';
 import 'package:login/screens/splash_screen.dart';
 
+import 'on_boarding_screen/landing.dart';
+
 void main() {
   runApp(
       MaterialApp(
@@ -33,6 +35,7 @@ class _MyAppState extends State<MyApp> {
   initState(){
      super.initState();
      checkLogin();
+     getOnBoardingSeen();
 
      Future.delayed(
        Duration(seconds: 3),
@@ -43,16 +46,24 @@ class _MyAppState extends State<MyApp> {
 //                builder : (context) => Login()
 //            ));
 
-         if(loggedIn == true) {
-           Navigator.pushReplacement(context, MaterialPageRoute(
-             builder: (context) => MainScreen(),
-           ));
-         }
-         else{
-            Navigator.pushReplacement(context, MaterialPageRoute(
-                builder : (context) => Login()
-            ));
-         }
+
+             if(loggedIn == true) {
+               Navigator.pushReplacement(context, MaterialPageRoute(
+                 builder: (context) => MainScreen(),
+               ));
+             }
+             else if(onBoarding == false && loggedIn == false) {
+               Navigator.pushReplacement(context,MaterialPageRoute(
+                 builder: (context) => OnBoarding(),
+               ));
+             }
+             else{
+               Navigator.pushReplacement(context, MaterialPageRoute(
+                 builder: (context) => Login(),
+               ));
+             }
+
+
 //         else if(onBoarding == false && loggedIn == false) {
 //           Navigator.pushReplacement(context,MaterialPageRoute(
 //             builder: (context) => OnBoarding(),
@@ -81,6 +92,20 @@ class _MyAppState extends State<MyApp> {
          });
   }
 
+  bool onBoarding = false;
+
+  getOnBoardingSeen() async {
+    await AuthService.getOnBoardingScreenSeenSharedPref().then((value) {
+
+      if(value!=null) {
+        setState(() {
+          onBoarding = value;
+        });
+      }
+
+
+    });
+  }
 
 
   @override
