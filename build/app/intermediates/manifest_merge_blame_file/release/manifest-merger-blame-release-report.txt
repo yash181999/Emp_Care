@@ -1,0 +1,334 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.chat.login"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:7:5-79
+11-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:8:5-67
+12-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:9:5-68
+13-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:9:22-65
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:5-80
+14-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:5-81
+15-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:8:5-71
+16-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:8:22-68
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:9:5-65
+17-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:9:22-62
+18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+18-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:10:5-80
+18-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:10:22-77
+19    <uses-permission android:name="android.permission.BLUETOOTH" />
+19-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:13:5-68
+19-->[:agora_rtc_engine] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\agora_rtc_engine\intermediates\library_manifest\release\AndroidManifest.xml:13:22-65
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+20-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:26:5-82
+21-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:26:22-79
+22
+23    <application
+23-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:3:4-40:19
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.1.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\0a88e15c27fe8f45486868f55d363bed\core-1.1.0\AndroidManifest.xml:24:18-86
+25        android:icon="@mipmap/ic_launcher"
+25-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:5:9-43
+26        android:label="login" >
+26-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:4:9-30
+27        <activity
+27-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:6:9-34:20
+28            android:name="com.chat.login.MainActivity"
+28-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:7:13-41
+29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+29-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:10:13-163
+30            android:hardwareAccelerated="true"
+30-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:11:13-47
+31            android:launchMode="singleTop"
+31-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:8:13-43
+32            android:theme="@style/LaunchTheme"
+32-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:9:13-47
+33            android:windowSoftInputMode="adjustResize" >
+33-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:12:13-55
+34
+35            <!--
+36                 Specifies an Android theme to apply to this Activity as soon as
+37                 the Android process has started. This theme is visible to the user
+38                 while the Flutter UI initializes. After that, this theme continues
+39                 to determine the Window background behind the Flutter UI.
+40            -->
+41            <meta-data
+41-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:17:13-20:17
+42                android:name="io.flutter.embedding.android.NormalTheme"
+42-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:18:15-70
+43                android:resource="@style/NormalTheme" />
+43-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:19:15-52
+44            <!--
+45                 Displays an Android View that continues showing the launch screen
+46                 Drawable until Flutter paints its first frame, then this splash
+47                 screen fades out. A splash screen is useful to avoid any visual
+48                 gap between the end of Android's launch screen and the painting of
+49                 Flutter's first frame.
+50            -->
+51            <meta-data
+51-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:26:13-29:17
+52                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+52-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:27:15-79
+53                android:resource="@drawable/launch_background" />
+53-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:28:15-61
+54
+55            <intent-filter>
+55-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:30:13-33:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:31:17-68
+56-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:31:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:32:17-76
+58-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:32:27-74
+59            </intent-filter>
+60        </activity>
+61        <!--
+62             Don't delete the meta-data below.
+63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+64        -->
+65        <meta-data
+65-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:37:9-39:33
+66            android:name="flutterEmbedding"
+66-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:38:13-44
+67            android:value="2" />
+67-->C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\android\app\src\main\AndroidManifest.xml:39:13-30
+68
+69        <service
+69-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:12:9-16:19
+70            android:name="com.google.firebase.components.ComponentDiscoveryService"
+70-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:12:18-89
+71            android:directBootAware="true"
+71-->[com.google.firebase:firebase-common:19.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\aaf8e24287bc2f028d4748f61899f9d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+72            android:exported="false" >
+72-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\42ae81f10aa71a9ece023fce4647b405\play-services-measurement-api-17.5.0\AndroidManifest.xml:29:13-37
+73            <meta-data
+73-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:85
+74                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+74-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:14:17-127
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[:firebase_analytics] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:15:17-82
+76            <meta-data
+76-->[:firebase_storage] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+77-->[:firebase_storage] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:10:17-126
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[:firebase_storage] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+79            <meta-data
+79-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:14:13-16:85
+80                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+80-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:15:17-127
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:16:17-82
+82            <meta-data
+82-->[:cloud_firestore] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+83-->[:cloud_firestore] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:10:17-133
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[:cloud_firestore] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+85            <meta-data
+85-->[:firebase_auth] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+86-->[:firebase_auth] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-122
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:firebase_auth] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+88            <meta-data
+88-->[:firebase_core] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+89-->[:firebase_core] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-123
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[:firebase_core] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+91            <meta-data
+91-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\42ae81f10aa71a9ece023fce4647b405\play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
+92                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+92-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\42ae81f10aa71a9ece023fce4647b405\play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\42ae81f10aa71a9ece023fce4647b405\play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e04e8f419b0089da88d1e109660f6547\jetified-firebase-storage-17.0.0\AndroidManifest.xml:31:13-33:85
+95                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+95-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e04e8f419b0089da88d1e109660f6547\jetified-firebase-storage-17.0.0\AndroidManifest.xml:32:17-107
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e04e8f419b0089da88d1e109660f6547\jetified-firebase-storage-17.0.0\AndroidManifest.xml:33:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e896a284eb7d73b7c109d7a55251fd62\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+98                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+98-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e896a284eb7d73b7c109d7a55251fd62\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e896a284eb7d73b7c109d7a55251fd62\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+101                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+101-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\0ab2e7af15821bd2aaebae71b08e932e\firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+104                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+104-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\0ab2e7af15821bd2aaebae71b08e932e\firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\0ab2e7af15821bd2aaebae71b08e932e\firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:32:13-34:85
+107                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+107-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:33:17-96
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:34:17-82
+109        </service>
+110
+111        <provider
+111-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:9-19:20
+112            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+112-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:12:13-82
+113            android:authorities="com.chat.login.flutter.image_provider"
+113-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:13-74
+114            android:exported="false"
+114-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+115            android:grantUriPermissions="true" >
+115-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:15:13-47
+116            <meta-data
+116-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:16:13-18:75
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:17:17-67
+118                android:resource="@xml/flutter_image_picker_file_paths" />
+118-->[:image_picker] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:18:17-72
+119        </provider>
+120
+121        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+121-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+121-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:18-101
+122            <intent-filter>
+122-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:29
+123                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+123-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:17-78
+123-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:25-75
+124            </intent-filter>
+125        </service>
+126
+127        <receiver
+127-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
+128            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+128-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
+129            android:enabled="true"
+129-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
+130            android:exported="false" >
+130-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
+131        </receiver>
+132
+133        <service
+133-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
+134            android:name="com.google.android.gms.measurement.AppMeasurementService"
+134-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
+135            android:enabled="true"
+135-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
+136            android:exported="false" />
+136-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
+137        <service
+137-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
+138            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+138-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
+139            android:enabled="true"
+139-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
+141            android:permission="android.permission.BIND_JOB_SERVICE" />
+141-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b554b02f0ea3a805655c0960b422e6fe\play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
+142        <!--
+143             FirebaseMessagingService performs security checks at runtime,
+144             but set to not exported to explicitly avoid allowing another app to call it.
+145        -->
+146        <service
+146-->[com.google.firebase:firebase-messaging:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b43d4e463f246f6565bcecd0920aa0a2\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:28:9-34:19
+147            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+147-->[com.google.firebase:firebase-messaging:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b43d4e463f246f6565bcecd0920aa0a2\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:29:13-82
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-messaging:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\b43d4e463f246f6565bcecd0920aa0a2\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:30:13-37
+149            <intent-filter android:priority="-500" >
+149-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:29
+150                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+150-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:17-78
+150-->[:firebase_messaging] C:\Users\yash1\Desktop\Hacksprint_PS08_ZipBots-employ_app\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:25-75
+151            </intent-filter>
+152        </service>
+153
+154        <activity
+154-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+155            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+155-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+156            android:excludeFromRecents="true"
+156-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+157            android:exported="true"
+157-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+158            android:launchMode="singleTask"
+158-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+159            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+159-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+160-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\e4577aac3afa7ec004a3464e20f578bd\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+161
+162        <receiver
+162-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:37:9-44:20
+163            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+163-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:38:13-78
+164            android:exported="true"
+164-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:39:13-36
+165            android:permission="com.google.android.c2dm.permission.SEND" >
+165-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:40:13-73
+166            <intent-filter>
+166-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:41:13-43:29
+167                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+167-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:42:17-81
+167-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\7f38d312f758739a228e72076816e5c7\firebase-iid-20.0.1\AndroidManifest.xml:42:25-78
+168            </intent-filter>
+169        </receiver>
+170
+171        <provider
+171-->[com.google.firebase:firebase-common:19.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\aaf8e24287bc2f028d4748f61899f9d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+172            android:name="com.google.firebase.provider.FirebaseInitProvider"
+172-->[com.google.firebase:firebase-common:19.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\aaf8e24287bc2f028d4748f61899f9d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+173            android:authorities="com.chat.login.firebaseinitprovider"
+173-->[com.google.firebase:firebase-common:19.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\aaf8e24287bc2f028d4748f61899f9d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+174            android:exported="false"
+174-->[com.google.firebase:firebase-common:19.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\aaf8e24287bc2f028d4748f61899f9d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+175            android:initOrder="100" />
+175-->[com.google.firebase:firebase-common:19.3.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\aaf8e24287bc2f028d4748f61899f9d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+176
+177        <activity
+177-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\11139722c985ff28aa4e11b218f92cf9\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+178            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+178-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\11139722c985ff28aa4e11b218f92cf9\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+179            android:exported="false"
+179-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\11139722c985ff28aa4e11b218f92cf9\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+180-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\11139722c985ff28aa4e11b218f92cf9\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+181
+182        <meta-data
+182-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\a7d80e1a4a2bf606c969751da8aa8f37\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+183            android:name="com.google.android.gms.version"
+183-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\a7d80e1a4a2bf606c969751da8aa8f37\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+184            android:value="@integer/google_play_services_version" />
+184-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\yash1\.gradle\caches\transforms-2\files-2.1\a7d80e1a4a2bf606c969751da8aa8f37\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+185    </application>
+186
+187</manifest>
